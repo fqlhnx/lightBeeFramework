@@ -14,6 +14,13 @@
 		F65F894319F8A45600C2B665 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65F894219F8A45600C2B665 /* Images.xcassets */; };
 		F65F894619F8A45600C2B665 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65F894419F8A45600C2B665 /* LaunchScreen.xib */; };
 		F65F895219F8A45600C2B665 /* lightBeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F895119F8A45600C2B665 /* lightBeeTests.m */; };
+		F6C6EA9719F8E15F00E4B842 /* NSString+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EA9619F8E15F00E4B842 /* NSString+LBExtension.m */; };
+		F6C6EA9A19F8E39900E4B842 /* NSData+BeeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EA9919F8E39900E4B842 /* NSData+BeeCategory.m */; };
+		F6C6EA9D19F8F18D00E4B842 /* LB_SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EA9C19F8F18D00E4B842 /* LB_SystemInfo.m */; };
+		F6C6EAA019F8F58D00E4B842 /* LB_Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EA9F19F8F58D00E4B842 /* LB_Foundation.m */; };
+		F6C6EAA319F8F64E00E4B842 /* LB_Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EAA219F8F64E00E4B842 /* LB_Singleton.m */; };
+		F6C6EAA619F8F97100E4B842 /* LB_DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EAA519F8F97100E4B842 /* LB_DeviceInfo.m */; };
+		F6C6EAA919F8FDF900E4B842 /* LB_Sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EAA819F8FDF900E4B842 /* LB_Sandbox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,20 @@
 		F65F894B19F8A45600C2B665 /* lightBeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lightBeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65F895019F8A45600C2B665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65F895119F8A45600C2B665 /* lightBeeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lightBeeTests.m; sourceTree = "<group>"; };
+		F6C6EA9519F8E15F00E4B842 /* NSString+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LBExtension.h"; sourceTree = "<group>"; };
+		F6C6EA9619F8E15F00E4B842 /* NSString+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LBExtension.m"; sourceTree = "<group>"; };
+		F6C6EA9819F8E39900E4B842 /* NSData+BeeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BeeCategory.h"; sourceTree = "<group>"; };
+		F6C6EA9919F8E39900E4B842 /* NSData+BeeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BeeCategory.m"; sourceTree = "<group>"; };
+		F6C6EA9B19F8F18D00E4B842 /* LB_SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LB_SystemInfo.h; sourceTree = "<group>"; };
+		F6C6EA9C19F8F18D00E4B842 /* LB_SystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LB_SystemInfo.m; sourceTree = "<group>"; };
+		F6C6EA9E19F8F58D00E4B842 /* LB_Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LB_Foundation.h; sourceTree = "<group>"; };
+		F6C6EA9F19F8F58D00E4B842 /* LB_Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LB_Foundation.m; sourceTree = "<group>"; };
+		F6C6EAA119F8F64E00E4B842 /* LB_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LB_Singleton.h; sourceTree = "<group>"; };
+		F6C6EAA219F8F64E00E4B842 /* LB_Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LB_Singleton.m; sourceTree = "<group>"; };
+		F6C6EAA419F8F97100E4B842 /* LB_DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LB_DeviceInfo.h; sourceTree = "<group>"; };
+		F6C6EAA519F8F97100E4B842 /* LB_DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LB_DeviceInfo.m; sourceTree = "<group>"; };
+		F6C6EAA719F8FDF900E4B842 /* LB_Sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LB_Sandbox.h; sourceTree = "<group>"; };
+		F6C6EAA819F8FDF900E4B842 /* LB_Sandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LB_Sandbox.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +109,7 @@
 				F65F893F19F8A45600C2B665 /* Main.storyboard */,
 				F65F894219F8A45600C2B665 /* Images.xcassets */,
 				F65F894419F8A45600C2B665 /* LaunchScreen.xib */,
+				F65F895B19F8A77D00C2B665 /* lightBeeFramework */,
 				F65F893519F8A45600C2B665 /* Supporting Files */,
 			);
 			path = lightBee;
@@ -117,6 +139,99 @@
 				F65F895019F8A45600C2B665 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F65F895B19F8A77D00C2B665 /* lightBeeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F65F895C19F8A77D00C2B665 /* MVC */,
+				F65F896019F8A77D00C2B665 /* System */,
+				F65F896319F8A77D00C2B665 /* Vendor */,
+			);
+			path = lightBeeFramework;
+			sourceTree = "<group>";
+		};
+		F65F895C19F8A77D00C2B665 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				F65F895D19F8A77D00C2B665 /* Controller */,
+				F65F895E19F8A77D00C2B665 /* Model */,
+				F65F895F19F8A77D00C2B665 /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		F65F895D19F8A77D00C2B665 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F65F895E19F8A77D00C2B665 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F65F895F19F8A77D00C2B665 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F65F896019F8A77D00C2B665 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F65F896119F8A77D00C2B665 /* foundation */,
+				F65F896219F8A77D00C2B665 /* Network */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F65F896119F8A77D00C2B665 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6EA9E19F8F58D00E4B842 /* LB_Foundation.h */,
+				F6C6EA9F19F8F58D00E4B842 /* LB_Foundation.m */,
+				F6C6EA9419F8DEE800E4B842 /* Category */,
+				F6C6EA9B19F8F18D00E4B842 /* LB_SystemInfo.h */,
+				F6C6EA9C19F8F18D00E4B842 /* LB_SystemInfo.m */,
+				F6C6EAA119F8F64E00E4B842 /* LB_Singleton.h */,
+				F6C6EAA219F8F64E00E4B842 /* LB_Singleton.m */,
+				F6C6EAA419F8F97100E4B842 /* LB_DeviceInfo.h */,
+				F6C6EAA519F8F97100E4B842 /* LB_DeviceInfo.m */,
+				F6C6EAA719F8FDF900E4B842 /* LB_Sandbox.h */,
+				F6C6EAA819F8FDF900E4B842 /* LB_Sandbox.m */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		F65F896219F8A77D00C2B665 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F65F896319F8A77D00C2B665 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		F6C6EA9419F8DEE800E4B842 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F6C6EA9519F8E15F00E4B842 /* NSString+LBExtension.h */,
+				F6C6EA9619F8E15F00E4B842 /* NSString+LBExtension.m */,
+				F6C6EA9819F8E39900E4B842 /* NSData+BeeCategory.h */,
+				F6C6EA9919F8E39900E4B842 /* NSData+BeeCategory.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +334,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C6EAA019F8F58D00E4B842 /* LB_Foundation.m in Sources */,
+				F6C6EAA319F8F64E00E4B842 /* LB_Singleton.m in Sources */,
 				F65F893E19F8A45600C2B665 /* ViewController.m in Sources */,
+				F6C6EA9A19F8E39900E4B842 /* NSData+BeeCategory.m in Sources */,
+				F6C6EA9D19F8F18D00E4B842 /* LB_SystemInfo.m in Sources */,
 				F65F893B19F8A45600C2B665 /* AppDelegate.m in Sources */,
+				F6C6EAA619F8F97100E4B842 /* LB_DeviceInfo.m in Sources */,
 				F65F893819F8A45600C2B665 /* main.m in Sources */,
+				F6C6EA9719F8E15F00E4B842 /* NSString+LBExtension.m in Sources */,
+				F6C6EAA919F8FDF900E4B842 /* LB_Sandbox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = lightBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = lightBee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +538,7 @@
 				F65F895719F8A45600C2B665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F65F895819F8A45600C2B665 /* Build configuration list for PBXNativeTarget "lightBeeTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +547,7 @@
 				F65F895A19F8A45600C2B665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

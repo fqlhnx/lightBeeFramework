@@ -10,4 +10,7 @@
 
 @interface NSData (BeeCategory)
 
+@property (nonatomic, readonly) NSData *	MD5;
+@property (nonatomic, readonly) NSString *	MD5String;
+
 @end

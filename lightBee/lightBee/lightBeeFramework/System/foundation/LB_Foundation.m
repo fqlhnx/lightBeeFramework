@@ -8,6 +8,6 @@
 
 #import "LB_Foundation.h"
 
-@implementation LB_Foundation
+@implementation LB_Foundation 
 
 @end
