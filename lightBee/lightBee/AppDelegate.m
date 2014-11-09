@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "UIDevice+IOKitDeviceInfo.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *imei = [UIDevice IODeviceIMEI];
     return YES;
 }
 

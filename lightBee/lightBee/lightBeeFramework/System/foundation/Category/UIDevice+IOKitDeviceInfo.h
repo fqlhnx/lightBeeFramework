@@ -13,4 +13,6 @@
 + (NSString*)IOSerialNumber;
 + (NSString*)IOPlatformUUID;
 
++ (NSString*)deviceIMEI;
++ (NSString*)IODeviceIMEI;
 @end

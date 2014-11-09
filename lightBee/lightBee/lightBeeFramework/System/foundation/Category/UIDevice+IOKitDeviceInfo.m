@@ -33,6 +33,7 @@ typedef CFTypeRef (* IORegistryEntryCreateCFProperty)(
                                                       CFAllocatorRef allocator,
                                                       IOOptionBits options );
 
+static const CFStringRef kIODeviceIMEI = CFSTR("device-imei");
 
 + (NSString *)IOSerialNumber
 {
@@ -42,6 +43,47 @@ typedef CFTypeRef (* IORegistryEntryCreateCFProperty)(
 + (NSString *)IOPlatformUUID
 {
     return [[self class] IODeviceInfoForKey:CFSTR("IOPlatformUUID")];
+}
+
++ (NSString*)IODeviceIMEI
+{
+    return [[self class] IODeviceInfoForKey:kIODeviceIMEI];
+}
+
++ (NSString *)deviceIMEI
+{
+    void *IOKit = dlopen("/System/Library/Frameworks/IOKit.framework/IOKit", RTLD_NOW);
+    if (!IOKit) {
+        return nil;
+    }
+    
+    IOServiceGetMatchingService pIOServiceGetMatchingService = dlsym(IOKit, "IOServiceGetMatchingService");
+    IOServiceMatching pIOServiceMatching = dlsym(IOKit, "IOServiceMatching");
+    IORegistryEntryCreateCFProperty pIORegistryEntryCreateCFProperty = dlsym(IOKit, "IORegistryEntryCreateCFProperty");
+    IORegistryEntryCreateCFProperties pIORegistryEntryCreateCFProperties = dlsym(IOKit, "IORegistryEntryCreateCFProperties");
+    IOObjectRelease pIOObjectRelease = dlsym(IOKit, "IOObjectRelease");
+    mach_port_t *kIOMasterPortDefault = dlsym(IOKit, "kIOMasterPortDefault");
+    io_object_t platformExpert;
+    IOServiceNameMatching pIOServiceNameMatching = dlsym(IOKit, "IOServiceNameMatching");
+    CFDictionaryRef ma = pIOServiceNameMatching("baseband");
+    const void *keys[]={CFSTR("IOProviderClass"),CFSTR("IOClass")};
+    const void *values[]={CFSTR("IOPlatformDevice"),CFSTR("baseband")};
+    CFDictionaryRef match = CFDictionaryCreate(kCFAllocatorDefault, keys, values, sizeof(keys)/sizeof(keys[0]), &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+    platformExpert = pIOServiceGetMatchingService(*kIOMasterPortDefault, ma);
+    
+    CFMutableDictionaryRef res = NULL;
+    pIORegistryEntryCreateCFProperties(platformExpert,&res,kCFAllocatorDefault,0);
+    NSLog(@" %@\n",res);
+    
+    NSString *imeiString;
+    if (platformExpert) {
+        CFTypeRef imei = pIORegistryEntryCreateCFProperty(platformExpert, CFSTR("device-imei"), kCFAllocatorDefault, 0);
+        imeiString = [[NSString alloc]initWithBytes:[(NSData *)CFBridgingRelease(imei) bytes] length:[(NSData *)CFBridgingRelease(imei) length] encoding:NSUTF8StringEncoding];
+        NSLog(@"device imei = %@\n",imeiString);
+        CFRelease(imei);
+    }
+
+    return imeiString;
 }
 
 + (NSString*)IODeviceInfoForKey:(CFStringRef)key
@@ -64,8 +106,8 @@ typedef CFTypeRef (* IORegistryEntryCreateCFProperty)(
     CFDictionaryRef ma = pIOServiceMatching("IOPlatformExpertDevice");
     platformExpert = pIOServiceGetMatchingService(*kIOMasterPortDefault, ma);
     if (platformExpert) {
-        CFTypeRef sn = pIORegistryEntryCreateCFProperty(platformExpert, key, kCFAllocatorDefault, 0);
-        retVal = (NSString*)CFBridgingRelease(sn);
+        CFTypeRef value = pIORegistryEntryCreateCFProperty(platformExpert, key, kCFAllocatorDefault, 0);
+        retVal = (NSString*)CFBridgingRelease(value);
         pIOObjectRelease(platformExpert);
     }
 
