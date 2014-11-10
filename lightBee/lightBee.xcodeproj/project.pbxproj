@@ -21,6 +21,7 @@
 		F6C6EAA319F8F64E00E4B842 /* LB_Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EAA219F8F64E00E4B842 /* LB_Singleton.m */; };
 		F6C6EAA619F8F97100E4B842 /* LB_DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EAA519F8F97100E4B842 /* LB_DeviceInfo.m */; };
 		F6C6EAA919F8FDF900E4B842 /* LB_Sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C6EAA819F8FDF900E4B842 /* LB_Sandbox.m */; };
+		F6E696DE1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E696DD1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		F6C6EAA519F8F97100E4B842 /* LB_DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LB_DeviceInfo.m; sourceTree = "<group>"; };
 		F6C6EAA719F8FDF900E4B842 /* LB_Sandbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LB_Sandbox.h; sourceTree = "<group>"; };
 		F6C6EAA819F8FDF900E4B842 /* LB_Sandbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LB_Sandbox.m; sourceTree = "<group>"; };
+		F6E696DC1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IOKitDeviceInfo.h"; sourceTree = "<group>"; };
+		F6E696DD1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IOKitDeviceInfo.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +233,8 @@
 				F6C6EA9619F8E15F00E4B842 /* NSString+LBExtension.m */,
 				F6C6EA9819F8E39900E4B842 /* NSData+BeeCategory.h */,
 				F6C6EA9919F8E39900E4B842 /* NSData+BeeCategory.m */,
+				F6E696DC1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.h */,
+				F6E696DD1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				F6C6EAA019F8F58D00E4B842 /* LB_Foundation.m in Sources */,
 				F6C6EAA319F8F64E00E4B842 /* LB_Singleton.m in Sources */,
 				F65F893E19F8A45600C2B665 /* ViewController.m in Sources */,
+				F6E696DE1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.m in Sources */,
 				F6C6EA9A19F8E39900E4B842 /* NSData+BeeCategory.m in Sources */,
 				F6C6EA9D19F8F18D00E4B842 /* LB_SystemInfo.m in Sources */,
 				F65F893B19F8A45600C2B665 /* AppDelegate.m in Sources */,
