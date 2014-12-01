@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60237431A2C96FF00593888 /* NSArray+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F60237421A2C96FF00593888 /* NSArray+LBExtension.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F65F893819F8A45600C2B665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F893719F8A45600C2B665 /* main.m */; };
 		F65F893B19F8A45600C2B665 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F893A19F8A45600C2B665 /* AppDelegate.m */; };
 		F65F893E19F8A45600C2B665 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F893D19F8A45600C2B665 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F60237411A2C96FF00593888 /* NSArray+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LBExtension.h"; sourceTree = "<group>"; };
+		F60237421A2C96FF00593888 /* NSArray+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LBExtension.m"; sourceTree = "<group>"; };
 		F65F893219F8A45600C2B665 /* lightBee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lightBee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65F893619F8A45600C2B665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F65F893719F8A45600C2B665 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				F6C6EA9919F8E39900E4B842 /* NSData+BeeCategory.m */,
 				F6E696DC1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.h */,
 				F6E696DD1A0F2C3C00A26603 /* UIDevice+IOKitDeviceInfo.m */,
+				F60237411A2C96FF00593888 /* NSArray+LBExtension.h */,
+				F60237421A2C96FF00593888 /* NSArray+LBExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				F6C6EAA619F8F97100E4B842 /* LB_DeviceInfo.m in Sources */,
 				F65F893819F8A45600C2B665 /* main.m in Sources */,
 				F6C6EA9719F8E15F00E4B842 /* NSString+LBExtension.m in Sources */,
+				F60237431A2C96FF00593888 /* NSArray+LBExtension.m in Sources */,
 				F6C6EAA919F8FDF900E4B842 /* LB_Sandbox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
